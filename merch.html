@@ -2,129 +2,197 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Services and Merchandise</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <style media="screen">
+      .center {
+        text-align: center;
+      }
+
+      .brown {
+        background-color: #582707;
+      }
+
+      .black {
+        background-color: #230007;
+      }
+
+      .sidePadding {
+        padding: 5px;
+      }
+
+      .itemPic {
+        height:300px;
+      }
+
+      .subHeading {
+        font-size: 1.5em;
+        margin: 10px;
+        color: #fb9926;
+      }
+
+      .picWrapper {
+        height: 300px;
+        width: 300px;
+        box-shadow: 1px 1px 10px #582707;
+        overflow: hidden;
+        margin: 10px;
+      }
+
+      .rowWrap {
+        flex-flow: row wrap;
+      }
+
+      @media (min-width 500px){
+
+        }
+      }
+
+    </style>
   </head>
 
   <body>
-      <header class="header">
-          <div>
-              <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg
-              " alt="Peach Cobblers" class="logo">
-              <h1>Peach Cobblers</h1>
-          </div>
-          <a href="home.html" class="active">Home</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-      </header>
-    <nav>
+    <header>
+      <div class="header">
+        <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg" alt="Peach Cobblers" class="logo">
+        <h1 id="navTitle">Peach Cobblers</h1>
+      </div>
+      <nav class="nav" >
+        <a href="./home.html" class="navItem"><h2>Home</h2></a>
+        <a href="./merch.html" class="active navItem"><h2>Services</h2></a>
+        <a href="./contact.html" class="navItem"><h2>Contact</h2></a>
+      </nav>
+    </header>
+
+<div class="flexBox small">
+
+    <nav class="sticky">
       <section>
-        <h2>Services</h2>
-        <h3>Repair</h3>
-        <h3>Accessories</h3>
+        <h2 class="center active sidePadding">Services</h2>
+        <a href="#repair"><h3 class="center sidePadding">Repair</h3></a>
+        <a href="#accessories"><h3 class="center sidePadding">Accessories</h3></a>
       </section>
       <section>
-        <h2>Adopt-a-Shoe</h2>
-        <h3>Women's</h3>
-        <h3>Men's</h3>
-        <h3>Boots</h3>
+        <h2 class="center active sidePadding">Adopt-a-Shoe</h2>
+        <a href="#womens"><h3 class="center sidePadding">Women's</h3></a>
+        <a href="#mens"><h3 class="center sidePadding">Men's</h3></a>
+        <a href="#boots"><h3 class="center sidePadding">Boots</h3></a>
       </section>
     </nav>
 
-    <div class="">
-      <section>
-        <h3>Repair</h3>
+    <div class="sidePadding">
+      <section id="repair">
+        <h3 class="subHeading">Repair</h3>
+        <section class="flexBox rowWrap">
         <figure>
-          <img src="./images/resoling.jpg" alt="Resoling">
+          <div class="picWrapper"><img src="./images/resoling.jpg" alt="Resoling" class="itemPic"></div>
           <figcaption>Resole $25</figcaption>
         </figure>
         <figure>
-          <img src="./images/heelreplacement.jpg" alt="Hell Replacement">
+          <div class="picWrapper"><img src="./images/heelreplacement.jpg" alt="Hell Replacement" class="itemPic"></div>
           <figcaption>Heel Replacement $45</figcaption>
         </figure>
         <figure>
-          <img src="./images/shoeshine.jpg" alt="Shoe Shining">
+          <div class="picWrapper"><img src="./images/shoeshine.jpg" alt="Shoe Shining" class="itemPic"></div>
           <figcaption>Shining $10</figcaption>
         </figure>
       </section>
-      <section>
-        <h3>Accessories</h3>
+      </section>
+      <section id="accessories">
+        <h3 class="subHeading">Accessories</h3>
+        <section class="flexBox rowWrap">
         <figure>
-          <img src="./images/shoebrush.jpg" alt="Shoe Brush">
+          <div class="picWrapper"><img src="./images/shoebrush.jpg" alt="Shoe Brush" class="itemPic"></div>
           <figcaption>Brushes $20</figcaption>
         </figure>
         <figure>
-          <img src="./images/archsupports.jpg" alt="Arch Supports">
+          <div class="picWrapper"><img src="./images/archsupports.jpg" alt="Arch Supports" class="itemPic"></div>
           <figcaption>Arch Supports $5</figcaption>
         </figure>
         <figure>
-          <img src="./images/shoepolish.jpg" alt="Shoe Polish">
+          <div class="picWrapper"><img src="./images/shoepolish.jpg" alt="Shoe Polish" class="itemPic"></div>
           <figcaption>Shoe Polish $15</figcaption>
         </figure>
         <figure>
-          <img src="./images/insoles.jpg" alt="Insoles">
+          <div class="picWrapper"><img src="./images/insoles.jpg" alt="Insoles" class="itemPic"></div>
           <figcaption>Insoles $10</figcaption>
         </figure>
         <figure>
-          <img src="./images/shoetree.jpg" alt="Shoe Trees">
+          <div class="picWrapper"><img src="./images/shoetree.jpg" alt="Shoe Trees" class="itemPic"></div>
           <figcaption>Shoe Tree $15</figcaption>
         </figure>
       </section>
-      <section>
-        <h3>Women's</h3>
+      </section>
+      <section id="womens">
+        <h3 class="subHeading">Women's</h3>
+        <section class="flexBox rowWrap">
+
         <figure>
-          <img src="./images/wshoe1.jpg" alt="Women's Shoe">
+          <div class="picWrapper"><img src="./images/wshoe1.jpg" alt="Women's Shoe" class="itemPic"></div>
           <figcaption>$70</figcaption>
         </figure>
         <figure>
-          <img src="./images/wshoe2.jpg" alt="Women's Shoe">
+          <div class="picWrapper"><img src="./images/wshoe2.jpg" alt="Women's Shoe" class="itemPic"></div>
           <figcaption>$45</figcaption>
         </figure>
+
       </section>
-      <section>
-        <h3>Men's</h3>
+      </section>
+      <section id="mens">
+        <h3 class="subHeading">Men's</h3>
+        <section class="flexBox rowWrap">
+
         <figure>
-          <img src="./images/mshoe1.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe1.jpg" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$80</figcaption>
         </figure>
         <figure>
-          <img src="./images/mshoe2.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe2.jpg" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$75</figcaption>
         </figure>
         <figure>
-          <img src="./images/mshoe3.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe3.png" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$75</figcaption>
         </figure>
         <figure>
-          <img src="./images/mshoe4.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe4.jpg" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$35</figcaption>
         </figure>
         <figure>
-          <img src="./images/mshoe5.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe5.jpg" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$60</figcaption>
         </figure>
         <figure>
-          <img src="./images/mshoe6.jpg" alt="Men's Shoe">
+          <div class="picWrapper"><img src="./images/mshoe6.jpg" alt="Men's Shoe" class="itemPic"></div>
           <figcaption>$65</figcaption>
         </figure>
+
       </section>
-      <section>
-        <h3>Boots</h3>
+      </section>
+      <section id="boots">
+        <h3 class="subHeading">Boots</h3>
+        <section class="flexBox rowWrap">
+
         <figure>
-          <img src="./images/boot1.jpg" alt="Boots">
+          <div class="picWrapper"><img src="./images/boot1.jpg" alt="Boots" class="itemPic"></div>
           <figcaption>$150</figcaption>
         </figure>
         <figure>
-          <img src="./images/boot2.jpg" alt="Boots">
+          <div class="picWrapper"><img src="./images/boot2.jpg" alt="Boots" class="itemPic"></div>
           <figcaption>$170</figcaption>
         </figure>
+
+      </section>
       </section>
     </div>
+
+</div>
     <footer class="footer">
-        <ul>
-            <a href="home.html" class="active">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </ul>
+      <ul>
+        <li><a href="./home.html" class="footerLink">Home</a></li>
+        <li><a href="./merch.html" class="footerLink">Services</a></li>
+        <li><a href="./contact.html" class="footerLink">Contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>
