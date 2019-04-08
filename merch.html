@@ -43,8 +43,15 @@
         flex-flow: row wrap;
       }
 
-      @media (min-width 500px){
+      @media (min-width: 500px){
+        .small {
+          display: flex;
+        }
+      }
 
+      @media (max-width: 500px){
+        .smallTitle{
+          font-size: 2em;
         }
       }
 
@@ -55,7 +62,7 @@
     <header>
       <div class="header">
         <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg" alt="Peach Cobblers" class="logo">
-        <h1 id="navTitle">Peach Cobblers</h1>
+        <h1 id="navTitle" class="smallTitle">Peach Cobblers</h1>
       </div>
       <nav class="nav" >
         <a href="./home.html" class="navItem"><h2>Home</h2></a>
@@ -64,9 +71,9 @@
       </nav>
     </header>
 
-<div class="flexBox small">
+<div class="small">
 
-    <nav class="sticky">
+    <nav>
       <section>
         <h2 class="center active sidePadding">Services</h2>
         <a href="#repair"><h3 class="center sidePadding">Repair</h3></a>
