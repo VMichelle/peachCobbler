@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-      <header class="header">
-          <div>
-              <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg
-              " alt="Peach Cobblers" class="logo">
-              <h1>Peach Cobblers</h1>
-          </div>
-          <a href="home.html" class="active">Home</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-      </header>
-    <div class="contactForm">
-      <div class="formHeader">Contact Us</div>
-      //Name input
-      <label for="name">Name</label>
-      <input type="text" name="name" value="" placeholder="First and last name">
-      //Email input
-      <label for="email">Email</label>
-      <input type="email" name="email" value="">
-      //Phone input
-      <label for="phone">Phone</label>
-      <input type="phone" name="phone" value="">
-      //comment box
-      <label for="comment">Comment</label>
-      <textarea name="comment" rows="8" cols="80"></textarea>
-      //submit
-      <button type="button" name="submit">Submit</button>
+
+<head>
+  <meta charset="utf-8">
+  <title>PeachCobblersContact</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <style>
+    .mainContainer {
+      margin: 10px 0px 10px 0px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .contactForm {
+      background-color: #bbdef0;
+      display: flex;
+      flex-flow: column nowrap;
+      flex-basis: 50%;
+      padding: 10px;
+    }
+
+    .formHeader {
+      text-align: center;
+    }
+
+    .hoursLocation {
+      display: flex;
+      flex-flow: column nowrap;
+      height: auto;
+      flex-basis: 30%;
+      padding: 10px;
+    }
+    .ourHours {
+      margin: auto;
+    }
+    .location {
+      margin: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg
+                    " alt="Peach Cobblers" class="logo">
+      <h1 id="navTitle">Peach Cobblers</h1>
     </div>
-//right column hours and address
-    <div class="hoursLocation">
-      //hours section
-      <div class="ourHours">
-          <h3>Our Hours</h3>
-          <div class="hour">Monday: 9 am - 5 pm</div>
-          <div class="hour">Tuesday: 9 am - 5 pm</div>
-          <div class="hour">Wednesday: 9 am - 5 pm</div>
-          <div class="hour">Thursday: 9 am - 5 pm</div>
-          <div class="hour">Friday: 9 am - 5 pm</div>
-          <div class="hour">Saturday: 9 am - 5 pm</div>
-          <div class="hour">Sunday: Closed</div>
-      </div>
-      //location section
-      <div class="location">
-        <h3>Address</h3>
-        <div class="address">Peach Cobblers</div>
-        <div class="address">456 Peach Tree Street</div>
-        <div class="address">Atlanta, GA 30321</div>
-      </div>
+    <nav class="nav">
+      <a href="./home.html" class="navItem">
+        <h2>Home</h2>
+      </a>
+      <a href="./merch.html" class="navItem">
+        <h2>Services</h2>
+      </a>
+      <a href="./contact.html" class="active navItem">
+        <h2>Contact</h2>
+      </a>
+    </nav>
+  </header>
+<div class="mainContainer">
+  <div class="contactForm">
+    <h3 class="formHeader">Contact Us</h3>
+
+    <label for="name">Name</label>
+
+    <input type="text" name="name" value="" placeholder="First and last name">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" value="">
+
+    <label for="phone">Phone</label>
+    <input type="phone" name="phone" value="">
+
+    <label for="comment">Comment</label>
+    <textarea name="comment" rows="8" cols="80"></textarea>
+
+    <button type="button" name="submit">Submit</button>
+  </div>
+
+  <div class="hoursLocation">
+
+    <div class="ourHours">
+      <h3>Our Hours</h3>
+      <div class="hour">Monday: 9 am - 5 pm</div>
+      <div class="hour">Tuesday: 9 am - 5 pm</div>
+      <div class="hour">Wednesday: 9 am - 5 pm</div>
+      <div class="hour">Thursday: 9 am - 5 pm</div>
+      <div class="hour">Friday: 9 am - 5 pm</div>
+      <div class="hour">Saturday: 9 am - 5 pm</div>
+      <div class="hour">Sunday: Closed</div>
     </div>
 
-    <footer class="footer">
-        <ul>
-            <a href="home.html" class="active">Home</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </ul>
-    </footer>
-  </body>
+    <div class="location">
+      <h3>Address</h3>
+      <div class="address">Peach Cobblers</div>
+      <div class="address">456 Peach Tree Street</div>
+      <div class="address">Atlanta, GA 30321</div>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer">
+    <ul>
+      <li><a href="./home.html" class="footerLink">Home</a></li>
+      <li><a href="./merch.html" class="footerLink">Services</a></li>
+      <li><a href="./contact.html" class="footerLink">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
