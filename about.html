@@ -5,13 +5,57 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="./css/master.css">
+
+  <style media="screen">
+    .hero {
+      background-image: url(https://dur-duweb.newscyclecloud.com/storyimage/DU/20181104/NEWS04/181109852/EP/1/10/EP-181109852.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+    }
+
+    #heroText {
+      text-align: center;
+      font-size: 3em;
+
+      text-shadow: 2px 2px 8px black;
+      color: #fff;
+      padding-top: 8%;
+    }
+
+    .about{
+      align-content: center;
+      padding: 3%;
+      background-color: #bbdef0;
+      justify-content: center;
+    }
+
+    .aboutImage {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .description{
+      margin-left: 20px;
+      width: 30%;
+    }
+
+    #ourHistory {
+      line-height: 2em;
+    }
+
+    @media ()
+
+  </style>
+
 </head>
 
 <body>
   <header>
     <div class="header">
       <img src="https://i.pinimg.com/originals/13/1b/77/131b773ba521dcdb54d976ef6239fdbc.jpg
-              " alt="Peach Cobblers" class="logo">
+              "alt="Peach Cobblers" class="logo">
       <h1 id="navTitle">Peach Cobblers</h1>
     </div>
     <nav class="nav" >
@@ -20,18 +64,18 @@
       <a href="./contact.html" class="navItem"><h2>Contact</h2></a>
     </nav>
   </header>
-  //hero image stretching across 100% of the page
+  <!-- //hero image stretching across 100% of the page -->
   <div class="hero">
-    <h2>125 of Service</h2>
+    <h2 id="heroText">If shoes are good enough to wear,<br>they're good enough to repair.</h2>
   </div>
-  //about section with image on left and description on the right
-  <div class="about">
-    <div class="aboutImage">
-      <img src="http://hairstyletwist.com/wp-content/uploads/2015/01/img028hair.jpg" alt="familypic">
-    </div>
-    <div class="description">
-      <h3>Our History</h3>
-      <p>About our founder Philip Peach</p>
+  <!-- //about section with image on left and description on the right -->
+  <div class="about flexBox rowNowrap">
+
+    <div><img class="aboutImage" src="http://hairstyletwist.com/wp-content/uploads/2015/01/img028hair.jpg" alt="familypic"></div>
+
+    <div class="description columnFlex">
+      <h1 id="ourHistory">Our History</h1>
+      <h3>About our founder Philip Peach</h3>
       <p>In 1912, Philip Peach, age 18, left Arad, Hungary, to join his older brother, Joseph, living in Atlanta,
         Georgia. He sailed on the Prinz Freidrich Wilhelm from Bremen, Germany. After a 12-day voyage to New York he
         traveled to Atlanta by train. His brother talked a local cobbler into taking Philip as his apprentice and the
